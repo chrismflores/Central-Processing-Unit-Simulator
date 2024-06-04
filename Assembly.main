@@ -1,0 +1,23 @@
+math add R1 R2 R3
+math mult R1 R2
+branch 2R R1 gt R2 12
+branch 3R R5 le R8 R9 10
+call 2R R1 gt R2 12
+call 3R R5 le R8 R9 10
+push 33
+push R1 16
+push 2R R1 sub R2
+push 3R R1 add R2 R3
+push 33 mult Rd
+load 100 Rd
+load R1 R2 Rd
+load R4 31 Rd
+store 12 Rd
+store R1 R2 Rd
+store R2 32 Rd
+copy 123 Rd
+jump 12
+jump 52 Rd
+peek R1 12 Rd
+peek R3 R4 Rd
+pop Rd
